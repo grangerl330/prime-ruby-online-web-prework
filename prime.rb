@@ -1,9 +1,7 @@
-def prime?(num)
-  if num >= 2
-    (2...num).to_a.all? do |x|
-    num % x !=0
-end
-else
-  false
-end
+def prime?(integer)
+  if integer >= 2
+    array = (2...integer-1).to_a
+    array.each do |x|
+      integer % x != 0
+  end
 end
