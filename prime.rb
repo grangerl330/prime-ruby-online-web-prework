@@ -1,7 +1,6 @@
 def prime?(integer)
   if integer >= 2
-  test_array = [2..integer - 1]
-  test_array.each do |integer|
+  (2..integer - 1).all? do
     |x| integer % x != 0
   end
   else
