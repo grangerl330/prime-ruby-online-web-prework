@@ -3,5 +3,6 @@ def prime?(integer)
     array = (2...integer-1).to_a
     array.each do |x|
       integer % x != 0
+    end
   end
 end
